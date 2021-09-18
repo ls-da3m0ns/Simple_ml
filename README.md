@@ -10,7 +10,7 @@
  #### * Document Enhabcer  
  #### * Live Audio Captioning (Sybol AI)
 
-## I have Used AWOLabs API To build our authentication
-## Live Audio Captioning is built using Symbl.ai Service
-## Apart From ML models most of the webpages are monetized using coil
+### I have Used AWOLabs API To build our authentication
+### Live Audio Captioning is built using Symbl.ai Service
+### Apart From ML models most of the webpages are monetized using coil
 
