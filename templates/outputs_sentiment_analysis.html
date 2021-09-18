@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="monetization" content="$ilp.uphold.com/qKwAJjY42AN6">
+    
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Simple AI</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/floating-labels.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <form class="form-signin" method="POST">
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-bold">Sentiment Analysis Output</h1>
+        <!--<p>The probability of you sentence being positive is <b> {{positive}} </b> </p>
+        <p>The probability of you sentence being negative is <b> {{negative}} </b> </p>
+        -->
+
+        <p>Actual Text was <b> {{actual_text}} </b></p>
+        <p>Overall Polarity of text is <b> {{polarity}} </b> </p>
+        <p>Overall Subjectivity of text is <b> {{subjectivity}} </b> </p>
+        <p>Time taken to analyze you sentence is <b> {{time_taken}} ms </b> </p>
+        
+        {% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+        {% endfor %}
+    
+    </div>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2020-2021</p>
+    </form>
+  </body>
+</html>

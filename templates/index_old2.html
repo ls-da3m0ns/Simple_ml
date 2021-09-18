@@ -1,0 +1,148 @@
+<html>
+
+	<head>
+		<title> Form </title>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		
+		<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+		<script src = "static/js/form.js"></script>
+	</head>
+	
+	<style>
+	
+		body{
+		
+				background-color: lightblue;
+		}
+		
+		h1{
+				background-color: tomato;
+				margin: 50px auto;
+				text-align: center;
+				color: white;
+				
+			}
+		
+			
+
+		#formContainer{
+
+			background-color: white;
+			box-shadow: 0 12px 0 rgba(0,0,0,24), 0 17px 20px 0 rgba(0,0,0,5);
+			width:45%;
+			height:55%;
+			
+			margin: 50px auto;
+			
+		}
+
+		
+		#header{
+			
+			width: 100%;
+			height: 10px;
+			background:black;
+			
+		}
+		
+		#email{
+		
+			width:70%;
+			height:40px;
+			display: block;
+			margin: 0 auto;
+			border: none;
+			outline: none;
+			border-bottom: 2px solid black;
+			
+		}
+		
+		#password{
+		
+			width:70%;
+			height:40px;
+			display: block;
+			margin: 10 auto;
+			border: none;
+			outline: none;
+			border-bottom: 2px solid black;
+			
+		}
+		
+		#signUp{
+		
+			background-color: #df54f6;
+			color: white;
+			border: none;
+			font-weight: bold;
+			padding: 15px 32px;
+			border-radius: 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin-top: 20px;
+			margin-left: 54px;
+			
+		}
+
+		#signIn{
+		
+			background-color: #32ff73;
+			color: white;
+			border: none;
+			font-weight: bold;
+			padding: 15px 32px;
+			border-radius: 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin-top: 20px;
+			margin-left: 54px;
+			
+		}	
+		
+		#signOut{
+		
+			background-color: #ff4d4d;
+			color: white;
+			border: none;
+			font-weight: bold;
+			padding: 15px 32px;
+			border-radius: 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin-top: 20px;
+			margin-left: 54px;
+			
+		}
+		button:hover{
+			box-shadow: 0 7px 0 rgba(0,0,0,20), 0 10px 10px 0 rgba(0,0,0,10);	
+		}
+	</style>
+	<body>
+		<h1 style="color:white;">Simple AI</h1>
+		<div id = "formContainer">
+		
+		<div id="header">
+			
+		</div>
+		<br>
+		<input type="email" placeholder="Enter Your Email" id="email" >
+		<input type="password" placeholder="password" id="password">
+		<br>
+		<br>
+		<button onclick="signUp()" id="signUp"> Sign Up </button>
+		<button onclick="signIn()" id="signIn"> Sign In </button>
+		<button onclick="signOut()" id="signOut"> Sign Out </button>
+		<button onclick="login_google()" id="signOut"> Login With Google</button>
+
+		</div>
+		
+	</body>
+	
+</html>

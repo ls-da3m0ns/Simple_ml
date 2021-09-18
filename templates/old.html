@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f7;
+  font-size: 16px;
+  resize: none;
+}
+
+body{
+  background-color:lightblue;
+}
+	
+p{
+	text-align: center;
+	font-size:30px;
+}	
+	
+#myFile{
+		margin-left: 550px;
+	}
+	
+</style>
+</head>
+<body>
+
+<p><strong>Enter your text for sentiment analysis</strong></p> 
+<br>
+<br>
+
+<form method="post" id="firstform">
+  <!--<textarea id="textarea" name="confirmationText" form="firstform">Some text...</textarea>
+  <input type="submit" id="mytext"> -->
+
+  <input style="width: 100%;  height:200px" name="text" type="text" id="inputtext" required autofocus> 
+  <br>
+  <br>
+  <button type="submit">Predict</button>
+
+  <br>
+</form>
+
+<p> OR </p> 
+<!-- 
+<form method="post" action="http://127.0.0.1:5000/fileupload">
+  
+  <input type="file" class="myFile" id="myFile" name="filename">
+  <br>
+  <br>
+  <br>
+  <input type="submit" id="myFile">
+  
+</form>
+-->
+<p><strong>Click on the "Choose File" button to upload a file:</strong></p>
+
+<form method="post" enctype="multipart/form-data" action="http://127.0.0.1:5000/ocr"  >
+      <tb> <input type="file" name="tmp_filename" class="myFile">
+      <input type="submit" class="myFile" >
+    </form>
+
+</body>
+</html>
