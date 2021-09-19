@@ -180,7 +180,7 @@ def upload():
         smooth(iname)
 
         return render_template("document.html",
-            output_image = iname.split("/")[-1]
+            output_image = iname
         )
 
 @app.route("/",methods=["GET"])
