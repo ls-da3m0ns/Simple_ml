@@ -1,5 +1,5 @@
-## Simple ML
-#### Simple ML is a platform to make Machine Learning available to everyone
+## Simple AI
+#### Simple AI is a platform to make Machine Learning available to everyone
 #### It contains multiple ML models ready to use, any one who know how to click can leverage ML techniques to benifit them
 #### It has simple easy to use design and functioning 
 
